@@ -31,8 +31,3 @@ app.get('/divide/:num1/:num2', (req, res) => {
   const result = num1 / num2;
   res.send('Hasil: ' + result);
 });
-
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
