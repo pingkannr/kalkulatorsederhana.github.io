@@ -1,0 +1,24 @@
+name: Deploy to Endpoint
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and Deploy
+        run: |
+          # Lakukan langkah-langkah yang diperlukan untuk membangun situs
+          # dan mengirimkannya ke endpoint yang diinginkan.
+          # Contoh:
+          # npm install
+          # npm run build
+          # <perintah lain yang diperlukan>
+
+          # Contoh: deploy ke Netlify
+          # npm install netlify-cli -g
+          # netlify deploy --prod
